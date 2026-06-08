@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aashish Reule | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Sora:wght@300;400;600;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════
+     NAVIGATION
+═══════════════════════════════════ -->
+<nav>
+  <div class="nav-logo">
+    <button id="darkToggle">🌙 Dark</button>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#gallery">Hobbies</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#guestbook">Guestbook</a></li>
+  </ul>
+</nav>
+
+<!-- ═══════════════════════════════════
+     HERO
+═══════════════════════════════════ -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <span class="hero-tag">Computer Engineering · STU · 2026</span>
+    <h1 class="hero-name">Aashish<br/><span>Reule</span></h1>
+    <p class="hero-sub">Building the web today. Exploring the cosmos tomorrow. From Nepal 🇳🇵 studying in South Korea 🇰🇷.</p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn btn-primary">View Projects</a>
+      <a href="https://github.com/" target="_blank" class="btn btn-outline">GitHub ↗</a>
+    </div>
+    <div class="dday-badge">
+      ⏳ Days at STU: <span id="ddayCount">—</span> days
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════
+     ABOUT
+═══════════════════════════════════ -->
+<section id="about">
+  <p class="section-label">// 001 — about me</p>
+  <h2 class="section-title">Who I Am</h2>
+  <div class="about-grid">
+    <img src="C:\Users\Acer\OneDrive\Documents\Pictures\Saved Pictures\preview.webp" class="about-avatar" alt="Aashish Reule" style="object-fit:cover;border-radius:16px;width:100%;aspect-ratio:1;"/>
+    <div class="about-text">
+      <p>I'm Aashish Reule, a Computer Engineering student at Seoul Theological University (STU) in Bucheon, South Korea. Originally from Nepal, I arrived in March 2026 to pursue my passion for technology and space science.</p>
+      <p>My long-term dream is to work in <strong>computational astrophysics</strong> — using code to explore the universe. I see every line of HTML, CSS, and JavaScript as one step closer to that goal.</p>
+      <p>I've learned to be efficient, resourceful, and creative with limited tools.</p>
+      <div class="skills-list">
+        <span class="skill-tag">HTML</span>
+        <span class="skill-tag">CSS</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">Git</span>
+        <span class="skill-tag">Flexbox</span>
+        <span class="skill-tag">Responsive Design</span>
+        <span class="skill-tag">Dark Mode</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════
+     HOBBY GALLERY
+═══════════════════════════════════ -->
+<section id="gallery">
+  <p class="section-label">// 002 — hobbies</p>
+  <h2 class="section-title">What I Love</h2>
+  <div class="gallery-wrap">
+    <div class="gallery-card">
+      <div class="gallery-img-placeholder" id="galleryImgBox"></div>
+      <div class="gallery-caption">
+        <h3 id="galleryTitle">Artificial Intelligence</h3>
+        <p id="galleryDesc">Exploring how machines learn, reason, and create.</p>
+      </div>
+    </div>
+    <div class="gallery-nav">
+      <div class="gallery-dots">
+        <div class="dot active" id="dot0"></div>
+        <div class="dot" id="dot1"></div>
+        <div class="dot" id="dot2"></div>
+      </div>
+      <button id="nextBtn">Next →</button>
+      <span class="gallery-index" id="galleryIndex">1 / 3</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════
+     PROJECTS
+═══════════════════════════════════ -->
+<section id="projects">
+  <p class="section-label">// 003 — projects</p>
+  <h2 class="section-title">What I've Built</h2>
+  <div class="projects-grid">
+    <div class="project-card">
+      <div class="project-icon">🌐</div>
+      <h3>Personal Portfolio</h3>
+      <p>This responsive website with dark mode, gallery, D-Day counter, and guestbook form — built from scratch.</p>
+      <div class="project-tags">
+        <span class="project-tag">HTML</span>
+        <span class="project-tag">CSS</span>
+        <span class="project-tag">JS</span>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-icon">🛳️</div>
+      <h3>Titanic Data Analysis</h3>
+      <p>Analyzed passenger survival data using Google Sheets on mobile — charts, filters, and insights included.</p>
+      <div class="project-tags">
+        <span class="project-tag">Google Sheets</span>
+        <span class="project-tag">Data Analysis</span>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-icon">🐍</div>
+      <h3>MIT PS5 RSS Filter</h3>
+      <p>Python script for filtering RSS feeds by keywords, debugging Python 3.12 compatibility with feedparser.</p>
+      <div class="project-tags">
+        <span class="project-tag">Python</span>
+        <span class="project-tag">feedparser</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════
+     GUESTBOOK
+═══════════════════════════════════ -->
+<section id="guestbook">
+  <p class="section-label">// 004 — guestbook</p>
+  <h2 class="section-title">Leave a Message</h2>
+  <div class="guestbook-form">
+    <div class="form-row">
+      <div class="form-group">
+        <label for="gName">Your Name</label>
+        <input type="text" id="gName" placeholder="e.g. Prof. Chung"/>
+      </div>
+      <div class="form-group">
+        <label for="gEmail">Email (optional)</label>
+        <input type="email" id="gEmail" placeholder="you@example.com"/>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="gMessage">Message</label>
+      <textarea id="gMessage" placeholder="Write something nice..."></textarea>
+    </div>
+    <button id="submitBtn">Send Message ✉</button>
+    <p id="guestMsg"></p>
+    <div class="entries-list" id="entriesList"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════
+     FOOTER
+═══════════════════════════════════ -->
+<footer>
+  <p>© 2026 Aashish Reule — Computer Engineering, Seoul Theological University</p>
+  <p class="footer-contact">📧 aashish@stu.ac.kr &nbsp;|&nbsp; 📱 +82-10-XXXX-XXXX</p>
+  <p style="margin-top:0.5rem"><a href="https://github.com/" target="_blank">GitHub ↗</a></p>
+</footer>
+
+<!-- ═══════════════════════════════════
+     JAVASCRIPT
+═══════════════════════════════════ -->
+<script src="script.js"></script>
+
+</body>
+</html>
